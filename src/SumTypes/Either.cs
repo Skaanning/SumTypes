@@ -4,7 +4,7 @@ namespace SumTypes;
 /// C# version of a discriminated union like seen in F# or haskell.<br/>
 /// The value will be either of type T0 or type T1. Null values are not allowed and will throw an ArgumentNullException
 /// </summary>
-public readonly struct Either<T0, T1>
+public class Either<T0, T1>
 {
     private readonly int _index;
     private readonly T0? _value0;
@@ -63,7 +63,7 @@ public readonly struct Either<T0, T1>
 /// C# version of a discriminated union like seen in F# or haskell.<br/>
 /// The value will be either of type T0, T1 or T2. Null values are not allowed and will throw an ArgumentNullException
 /// </summary>
-public readonly struct Either<T0, T1, T2>
+public class Either<T0, T1, T2>
 {
     private readonly int _index;
     private readonly T0? _value0;
@@ -139,7 +139,7 @@ public readonly struct Either<T0, T1, T2>
 /// C# version of a discriminated union like seen in F# or haskell.<br/>
 /// The value will be either of type T0, T1, T2 or T3. Null values are not allowed and will throw an ArgumentNullException
 /// </summary>
-public readonly struct Either<T0, T1, T2, T3>
+public class Either<T0, T1, T2, T3>
 {
     private readonly int _index;
     private readonly T0? _value0;

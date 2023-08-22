@@ -1,6 +1,6 @@
 ﻿namespace SumTypes;
 
-public readonly struct Option<T>
+public class Option<T>
 {
     private readonly int _index;
     private readonly T? _value;
